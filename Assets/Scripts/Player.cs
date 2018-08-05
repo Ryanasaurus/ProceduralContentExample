@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -44,7 +43,10 @@ public class Player : MovingObject {
 	protected override void AttemptMove<T>(int xDir, int yDir) {
 		food--;
 		base.AttemptMove<T>(xDir, yDir);
-		Raycast2D hit;
+		RaycastHit2D hit;
+		if (Move (xDir, yDir, out hit)) {
+
+        }
 		CheckIfGameOver();
 		GameManager.instance.playersTurn = false;
 	}
@@ -65,7 +67,7 @@ public class Player : MovingObject {
 	protected override void OnCantMove<T>(T component) {
 		Wall hitWall = component as Wall;
 		hitWall.DamageWall(wallDamage);
-		animator.SetTrigget("playerChop");
+		animator.SetTrigger("playerChop");
 	}
 
 	private void Restart() {
@@ -73,7 +75,7 @@ public class Player : MovingObject {
 	}
 
 	public void LoseFood(int loss) {
-		animator.setTrigger("playerHit");
+		animator.SetTrigger("playerHit");
 		food -= loss;
 		CheckIfGameOver();
 	}
