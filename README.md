@@ -37,6 +37,6 @@ Made with Unity using the 2D Roguelike Tutorial:
 
 Everything used to demonstrate this technology was obtained from the Unity Asset Store. 
 
-(https://unity3d.com/learn/tutorials/s/2d-roguelike-tutorial)
+[Tutorial](https://unity3d.com/learn/tutorials/s/2d-roguelike-tutorial)
 
-(https://www.assetstore.unity3d.com/en/?&_ga=2.36880231.693987245.1535021252-446590656.1531972195#!/content/29825)
+[Asset Store](https://www.assetstore.unity3d.com/en/?&_ga=2.36880231.693987245.1535021252-446590656.1531972195#!/content/29825)
