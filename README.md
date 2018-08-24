@@ -23,6 +23,14 @@ components are the layout of the map (including food, walls, and enemies), and t
 the generation algorithm a little bit. The first clip is of the default generation algorithm. In the second I increased the amount of walls that will spawn in the level. In 
 the final clip, I decreased the amount of walls, and the amount of food that spawns. 
 
+##### How the algorithm works:
+
+This is a very simple demonstration of Procedural Content. It works by by just using a for loop, that populates the middle of the map, leaving an outer ring empty. The double for
+loop places walls, food, and enemies inside the level. 
+
+When placing down a tile, it randomly selects from the available prefabs for each object. (8 walls, 8 floors, 3 Outer walls). This makes each level look different, and will make new 
+levels each time. 
+
 #### Other Examples
 
 * Minecraft (World)
